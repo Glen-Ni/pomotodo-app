@@ -1,4 +1,5 @@
 import axios from 'axios'
+import history from './history'
 
 const appID = '8994HushSB7KkBY5xWyxfuoe'
 const appSecret = 'oM2jAddu2k4p6F1qVpFzjsmV'
@@ -33,8 +34,9 @@ instance.interceptors.response.use((response) => {
 	return response;
 },  (error) => {
 	if(error.response.status === 401){
-		console.log("重定向");
-		// history.push('/login')
+    console.log("重定向");
+    // window.location.href='/login' 这种方法会刷新页面
+		history.push('/login')
 	}
 	// Do something with response error
 	return Promise.reject(error);

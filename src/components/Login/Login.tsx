@@ -28,6 +28,7 @@ class Login extends React.Component<any, ILoginState> {
     const newState = {}
     newState[key] = value
     this.setState(newState)
+    console.log(localStorage)
   }
 
   submit = async () => {
