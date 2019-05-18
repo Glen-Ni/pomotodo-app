@@ -1,0 +1,14 @@
+#SignUp{
+  max-width: 500px;
+  margin: auto;
+  padding: 50px 0;
+  >*{
+    margin: 10px 0;
+  }
+  >h1 {
+    text-align: center;
+  }
+  >.signUpButton {
+    width: 100%
+  }
+}
