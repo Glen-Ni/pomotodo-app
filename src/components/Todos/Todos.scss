@@ -1,0 +1,10 @@
+#Todos{
+  padding: 16px;
+  margin: 16px;
+  width: calc(50% - 8px);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  >.todoList{
+    margin-top: 16px;
+  }
+}
