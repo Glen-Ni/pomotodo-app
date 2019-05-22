@@ -2,7 +2,11 @@ import React from 'react'
 import { Dropdown,Icon,Menu } from "antd";
 import history from 'src/config/history'
 import axios from '../../config/axios'
+
 import Todos from '../Todos/Todos'
+import Tomatoes from '../Tomatoes/Tomatoes'
+import Statistics from '../Statistics/Statistics'
+
 import './Home.scss'
 
 interface IRouter {
@@ -62,9 +66,11 @@ class Index extends React.Component<IRouter, IIndexState> {
 						</span>
 					</Dropdown>
 				</header>
-				<main>
+        <main>
+          <Tomatoes/>
 					<Todos/>
-				</main>
+        </main>
+        <Statistics/>
 			</div>
     )
   }

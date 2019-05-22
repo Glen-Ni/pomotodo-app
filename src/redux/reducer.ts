@@ -1,4 +1,6 @@
-export default (state: any[], action: any) => {
+import {combineReducers} from "redux";
+
+const todos = (state: any[], action: any) => {
   if (state === undefined) {
     return []
   }
@@ -28,3 +30,25 @@ export default (state: any[], action: any) => {
       return state
   }
 }
+
+const tomatoes = (state:any[] = [], action) => {
+	switch(action.type){
+		case 'ADD_TOMATO':
+			return [action.payload,...state];
+		case 'UPDATE_TOMATO':
+			return state.map(t=>{
+				if(t.id === action.payload.id){
+					return action.payload
+				}else{
+					return t
+				}
+			})
+    case 'INIT_TOMATOES':
+      console.log('reducer',action.payload)
+			return [...action.payload]
+		default:
+			return state
+	}
+}
+
+export default combineReducers({todos,tomatoes})

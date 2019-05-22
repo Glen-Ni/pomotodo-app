@@ -98,12 +98,12 @@ class Todos extends React.Component<any> {
               {...t}
             />
           ))}
-          {this.completedTodos.map(t => (
+          {/* {this.completedTodos.map(t => (
             <TodoItem
               key={t.id}
               {...t}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     )
@@ -111,7 +111,7 @@ class Todos extends React.Component<any> {
 }
 
 const mapStateToProps = (state: any) => ({
-  todos: state
+  todos: state.todos
 })
 
 const mapDispatchToProps = {

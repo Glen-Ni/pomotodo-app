@@ -12,6 +12,7 @@
     "jsx-no-lambda": false,
     "member-access": false,
     "no-console": [true, "warning"],
-    "only-arrow-functions": false
+    "only-arrow-functions": false,
+    "object-literal-sort-keys": false
   }
 }

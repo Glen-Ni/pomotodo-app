@@ -1,0 +1,14 @@
+#TomatoAction{
+  .timerWrapper,.inputWrapper{
+    position: relative;
+  }
+  .abort{
+    position: absolute;
+    right: -6px;top: -6px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .startTomatoButton{
+    width:100%
+  }
+}
