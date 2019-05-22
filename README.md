@@ -1,5 +1,5 @@
 # Pomotodo App
-> 仿[番茄土豆]（https://pomotodo.com/app/）
+> 仿[番茄土豆](https://pomotodo.com/app/)
 
 ## [预览地址](https://glen-ni.github.io/pomotodo-app/)
   ![preview](https://raw.githubusercontent.com/Glen-Ni/pomotodo-app/master/previews/preview-home.jpg)
