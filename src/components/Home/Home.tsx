@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dropdown,Icon,Menu } from "antd";
+import { Dropdown, Icon, Menu } from 'antd'
 import history from 'src/config/history'
 import axios from '../../config/axios'
 
@@ -25,11 +25,17 @@ const logout = () => {
 }
 
 const dropdown = (
-	<Menu>
-		<Menu.Item key="1"><Icon type="user" />个人设置</Menu.Item>
-		<Menu.Item key="2" onClick={logout}><Icon type="logout" />注销</Menu.Item>
-	</Menu>
-);
+  <Menu>
+    <Menu.Item key="1">
+      <Icon type="user" />
+      个人设置
+    </Menu.Item>
+    <Menu.Item key="2" onClick={logout}>
+      <Icon type="logout" />
+      注销
+    </Menu.Item>
+  </Menu>
+)
 
 class Index extends React.Component<IRouter, IIndexState> {
   constructor(props: any) {
@@ -57,21 +63,21 @@ class Index extends React.Component<IRouter, IIndexState> {
   render() {
     return (
       <div className="Index" id="Home">
-				<header>
-					<span className="logo">番茄土豆</span>
-					<Dropdown overlay={dropdown}>
-            <span className='user-setting'>
-							{this.state.user && this.state.user.account}
-							<Icon type="down"/>
-						</span>
-					</Dropdown>
-				</header>
+        <header>
+          <span className="logo">番茄土豆</span>
+          <Dropdown overlay={dropdown}>
+            <span className="user-setting">
+              {this.state.user && this.state.user.account}
+              <Icon type="down" />
+            </span>
+          </Dropdown>
+        </header>
         <main>
-          <Tomatoes/>
-					<Todos/>
+          <Tomatoes />
+          <Todos />
         </main>
-        <Statistics/>
-			</div>
+        <Statistics />
+      </div>
     )
   }
 }

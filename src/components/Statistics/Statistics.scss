@@ -1,13 +1,13 @@
-#Statistics{
+#Statistics {
   margin: 8px;
-  ul{
+  ul {
     display: flex;
     padding: 0;
     height: 96px;
     border: 1px solid #ddd;
     border-radius: 8px;
     list-style: none;
-    li{
+    li {
       flex: 1;
       position: relative;
       padding: 8px;
@@ -15,7 +15,7 @@
       // border: 1px solid #e4e4e4;
       color: #666;
       justify-content: center;
-      .class{
+      .class {
         position: absolute;
         top: 0;
         left: 8px;
@@ -39,13 +39,13 @@
         position: absolute;
         bottom: 8px;
         right: 8px;
-        margin:4px;
+        margin: 4px;
         width: 200px;
         height: 60px;
         svg {
-            overflow: hidden;
-            width: 200px;
-            height: 60px;
+          overflow: hidden;
+          width: 200px;
+          height: 60px;
         }
       }
     }

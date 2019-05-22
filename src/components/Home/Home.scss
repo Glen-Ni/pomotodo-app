@@ -1,8 +1,8 @@
-#Home{
+#Home {
   margin: 0 auto;
   max-width: 1000px;
   min-width: 800px;
-  >header{
+  > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,11 +12,11 @@
       font-size: 20px;
       font-weight: 700;
     }
-    .user-setting>i{
+    .user-setting > i {
       margin-left: 8px;
     }
   }
-  >main{
+  > main {
     display: flex;
     justify-content: space-between;
   }

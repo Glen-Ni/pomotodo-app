@@ -1,13 +1,13 @@
 import React from 'react'
 import axios from '../../config/axios'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import TodoInput from './TodoInput'
 import TodoItem from './TodoItem'
 import './Todos.scss'
 
-  // interface ITodoStates {
-  //   todos: any[]
-  // }
+// interface ITodoStates {
+//   todos: any[]
+// }
 
 class Todos extends React.Component<any> {
   constructor(props) {
@@ -16,16 +16,16 @@ class Todos extends React.Component<any> {
     //   todos: []
     // }
   }
-  get unDeletedTodos(){
-  	return this.props.todos.filter(t => !t.deleted)
+  get unDeletedTodos() {
+    return this.props.todos.filter(t => !t.deleted)
   }
 
-  get unCompletedTodos(){
-  	return this.unDeletedTodos.filter(t => !t.completed)
+  get unCompletedTodos() {
+    return this.unDeletedTodos.filter(t => !t.completed)
   }
 
-  get completedTodos(){
-  	return this.unDeletedTodos.filter(t => t.completed)
+  get completedTodos() {
+    return this.unDeletedTodos.filter(t => t.completed)
   }
   // async addTodo(param: any) {
   //   try {
@@ -93,10 +93,7 @@ class Todos extends React.Component<any> {
             />
           ))} */}
           {this.unCompletedTodos.map(t => (
-            <TodoItem
-              key={t.id}
-              {...t}
-            />
+            <TodoItem key={t.id} {...t} />
           ))}
           {/* {this.completedTodos.map(t => (
             <TodoItem
@@ -118,5 +115,7 @@ const mapDispatchToProps = {
   initTodos: (payload: []) => ({ type: 'INIT_TODOS', payload })
 }
 
-
-export default connect(mapStateToProps,mapDispatchToProps)(Todos)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Todos)

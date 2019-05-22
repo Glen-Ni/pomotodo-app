@@ -1,7 +1,7 @@
 import * as React from 'react'
 import axios from '../../config/axios'
 import { Checkbox, Icon } from 'antd'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import classNames from 'classnames'
 import './TodoItem.scss'
 
@@ -10,9 +10,9 @@ interface ITodoItemProps {
   description: string
   completed: boolean
   editing: boolean
-  todos: any,
+  todos: any
   updateTodo: (params: any) => any
-  editTodo:(params: number) => any
+  editTodo: (params: number) => any
   // update: (id: number, params: any) => void
   // switchToEdit: (id: number) => void
 }
@@ -36,9 +36,9 @@ class TodoItem extends React.Component<ITodoItemProps, ITodoItemState> {
   }
 
   update = async (id: number, params: any) => {
-    if(params.completed){
-			params.completed_at = new Date()
-		}
+    if (params.completed) {
+      params.completed_at = new Date()
+    }
     try {
       const response = await axios.put(`todos/${id}`, params)
       // const newTodos = this.props.todos.map(t => {
@@ -65,7 +65,12 @@ class TodoItem extends React.Component<ITodoItemProps, ITodoItemState> {
           onKeyUp={this.onKeyUp}
         />
         <div className="iconWrapper">
-          <Icon type="enter" onClick={()=>this.update(this.props.id, { description: this.state.editText })}/>
+          <Icon
+            type="enter"
+            onClick={() =>
+              this.update(this.props.id, { description: this.state.editText })
+            }
+          />
           <Icon
             type="delete"
             theme="filled"
@@ -112,7 +117,7 @@ class TodoItem extends React.Component<ITodoItemProps, ITodoItemState> {
     )
   }
 }
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   todos: state
 })
 
@@ -121,4 +126,7 @@ const mapDispatchToProps = {
   updateTodo: (payload: object) => ({ type: 'UPDATE_TODO', payload })
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(TodoItem)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(TodoItem)

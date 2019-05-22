@@ -53,9 +53,7 @@ class Statistics extends React.Component<IStatisticsProps> {
           <li>
             <span className="class">
               <p className="title">番茄历史</p>
-              <p className="subtitle">
-                累计完成番茄
-              </p>
+              <p className="subtitle">累计完成番茄</p>
               <p className="count">{this.finishedTomatoes.length}</p>
             </span>
             <Polygon
@@ -66,9 +64,7 @@ class Statistics extends React.Component<IStatisticsProps> {
           <li>
             <span className="class">
               <p className="title">任务历史</p>
-              <p className="subtitle">
-                累计完成任务
-              </p>
+              <p className="subtitle">累计完成任务</p>
               <p className="count">{this.finishedTodos.length}</p>
             </span>
             <Polygon

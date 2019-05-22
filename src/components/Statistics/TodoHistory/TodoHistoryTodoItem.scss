@@ -1,31 +1,30 @@
-#TodoHistoryTodoItem{
+#TodoHistoryTodoItem {
   padding: 8px;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-  .text{
-    .time{
+  .text {
+    .time {
       color: #999;
       margin-right: 8px;
     }
-    .description{
+    .description {
       color: #222222;
     }
   }
-  .action{
+  .action {
     display: none;
-    span{
+    span {
       color: deepskyblue;
       cursor: pointer;
-      &:first-child{
+      &:first-child {
         margin-right: 4px;
       }
     }
-
   }
-  &:hover{
+  &:hover {
     background: #f4f4f4;
-    >.action{
+    > .action {
       display: block;
     }
   }

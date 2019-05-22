@@ -1,6 +1,7 @@
 {
   "name": "my-pomotodo-app",
   "version": "0.1.0",
+  "homepage": "https://glen-ni.github.io/pomotodo-app",
   "private": true,
   "dependencies": {
     "antd": "^3.18.1",
@@ -16,6 +17,8 @@
     "redux": "^4.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts-ts-antd start",
     "build": "react-scripts-ts-antd build",
     "test": "react-scripts-ts-antd test --env=jsdom",
@@ -27,6 +30,7 @@
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
+    "gh-pages": "^2.0.1",
     "typescript": "^3.4.5"
   }
 }

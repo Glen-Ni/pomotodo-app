@@ -55,10 +55,10 @@ class Login extends React.Component<any, ILoginState> {
           placeholder="请输入用户名"
           prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
           value={account}
-          onChange={(e)=>this.onChange('account', e.target.value)}
+          onChange={e => this.onChange('account', e.target.value)}
         />
         <Input.Password
-          onChange={(e)=>this.onChange('password', e.target.value)}
+          onChange={e => this.onChange('password', e.target.value)}
           value={password}
           placeholder="请输入密码"
         />
