@@ -2,8 +2,12 @@
 > 模仿[番茄土豆](https://pomotodo.com/app/)，一个以番茄钟+Todolist为核心的效率工具。
 
 ## [预览地址](https://glen-ni.github.io/pomotodo-app/)
+<<<<<<< HEAD
   
   ![preview](https://raw.githubusercontent.com/Glen-Ni/pomotodo-app/master/previews/preview-home.jpg)
+=======
+  ![preview](https://raw.githubusercontent.com/Glen-Ni/pomotodo-app/master/Previews/preview-home.jpg)
+>>>>>>> 7423308129f0abf7d88917333d3f152524754134
 
 ## 介绍
 - 前后端分离，此项目仅为前端
