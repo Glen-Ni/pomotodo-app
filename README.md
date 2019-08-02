@@ -1,8 +1,15 @@
 # Pomotodo App
-> 仿[番茄土豆](https://pomotodo.com/app/)
+> 模仿[番茄土豆](https://pomotodo.com/app/)，一个以番茄钟+Todolist为核心的效率工具。
 
 ## [预览地址](https://glen-ni.github.io/pomotodo-app/)
+  
   ![preview](https://raw.githubusercontent.com/Glen-Ni/pomotodo-app/master/previews/preview-home.jpg)
+
+## 介绍
+- 前后端分离，此项目仅为前端
+- 主要是在React中使用TypeScript，使用脚手架搭建react环境
+- 模块化，分成多个组件，利用Redux进行通信
+- 图表使用svg
 
 ## 功能
 #### 已完成
@@ -12,9 +19,7 @@
 - 数据统计
 #### 待完成
 - 展示顺序调整
-- 统计分类显示
-- 图标细节
-- 等等等
+
 
 ## 技术栈
 - React
